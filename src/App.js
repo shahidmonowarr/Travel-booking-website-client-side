@@ -6,6 +6,8 @@ import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/NotFound/NotFound';
 import Footer from './Pages/Shared/Footer/Footer';
 import AuthProvider from './context/AuthProvider';
+import AddPackage from './Pages/AddPackage/AddPackage';
+import Packages from './Pages/Home/Packages/Packages';
 
 function App() {
   return (
@@ -20,7 +22,12 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-
+            <Route path="/addPackage">
+              <AddPackage></AddPackage>
+            </Route>
+            <Route path="/packages">
+              <Packages></Packages>
+            </Route>
             <Route path="/login">
               <Login></Login>
             </Route>

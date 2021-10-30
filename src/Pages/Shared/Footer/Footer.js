@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-md-4">
                             <div className="left-container text-start">
-                                <h1>MediPharma</h1>
+                                <h1>Travel Mate</h1>
                                 <div className="icons-container d-flex text-center">
                                     <div className="icon">
                                         <FontAwesomeIcon icon={faInstagramSquare} />
@@ -41,7 +41,7 @@ const Footer = () => {
                             <div >
                                 <ul>
                                     <li className="footer-menu">Home</li>
-                                    <li className="footer-menu">Services</li>
+                                    <li className="footer-menu">Packages</li>
                                     <li className="footer-menu">About us</li>
                                 </ul>
                             </div>
