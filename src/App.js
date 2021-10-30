@@ -9,6 +9,7 @@ import AuthProvider from './context/AuthProvider';
 import AddPackage from './Pages/AddPackage/AddPackage';
 import Packages from './Pages/Home/Packages/Packages';
 import Booking from './Pages/Booking/Booking';
+import ManagePackages from './Pages/ManagePackages/ManagePackages';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <Route path="/addPackage">
               <AddPackage></AddPackage>
+            </Route>
+            <Route path="/managePackages">
+              <ManagePackages></ManagePackages>
             </Route>
             <Route path="/packages">
               <Packages></Packages>
