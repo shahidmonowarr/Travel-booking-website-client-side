@@ -8,6 +8,7 @@ import Footer from './Pages/Shared/Footer/Footer';
 import AuthProvider from './context/AuthProvider';
 import AddPackage from './Pages/AddPackage/AddPackage';
 import Packages from './Pages/Home/Packages/Packages';
+import Booking from './Pages/Booking/Booking';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path="/packages">
               <Packages></Packages>
+            </Route>
+            <Route path="/booking/:packageId">
+              <Booking></Booking>
             </Route>
             <Route path="/login">
               <Login></Login>
