@@ -1,5 +1,5 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
 import useAuth from '../../context/useAuth';
@@ -13,18 +13,15 @@ const Booking = () => {
 
     const onSubmit = data => {
 
-        fetch('http://localhost:5000/orders', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-            .then(res => res.json())
-            .then(result => {
-                if (result.insertedId) {
-                    alert('Order processed Successfully done');
+        const orderStatus = "pending";
+        data.orderStatus = orderStatus;
 
+        console.log(data);
+
+        axios.post('https://whispering-mountain-08935.herokuapp.com/', data)
+            .then(res => {
+                if (res.data.insertedId) {
+                    alert('Added Successfully');
                     reset();
                 }
             })
@@ -62,9 +59,11 @@ const Booking = () => {
 
                     {errors.email && <span className="error">This field is required</span>}
 
+                    <input placeholder="Price" defaultValue={singlePackage.price} {...register("price")} />
+                    <input placeholder="Package Title" defaultValue={singlePackage.title} {...register("title")} />
                     <input placeholder="Address" defaultValue="" {...register("address")} />
+
                     <input placeholder="Phone No." defaultValue="" {...register("phone")} />
-                    <input placeholder="Total Person" defaultValue="" {...register("person")} />
                     <input type="submit" />
                 </form>
             </div>
