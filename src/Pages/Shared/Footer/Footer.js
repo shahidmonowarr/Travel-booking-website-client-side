@@ -32,8 +32,11 @@ const Footer = () => {
 
                         <div className="col-md-4">
                             <div className="right-footer-container">
-                                <div className="phone d-flex align-items-center justify-content-center mt-5">
-                                    <p >Shahid Ⓒ. All rights reserved</p>
+                                <div className="phone d-flex align-items-center justify-content-center mt-3">
+                                    <div>
+                                        <input className="px-5" placeholder="Email" type="email" name="" id="" />
+                                        <button className="px-5 my-2 bg-warning rounded-3 text-white">SUBSCRIBE NOW</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -47,6 +50,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+                    <h6 >Shahid Ⓒ. All rights reserved</h6>
                 </div>
             </div>
         </div>
