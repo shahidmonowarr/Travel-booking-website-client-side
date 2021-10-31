@@ -10,6 +10,7 @@ import AddPackage from './Pages/AddPackage/AddPackage';
 import Packages from './Pages/Home/Packages/Packages';
 import Booking from './Pages/Booking/Booking';
 import ManagePackages from './Pages/ManagePackages/ManagePackages';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -24,18 +25,18 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/addPackage">
+            <PrivateRoute path="/addPackage">
               <AddPackage></AddPackage>
-            </Route>
-            <Route path="/managePackages">
+            </PrivateRoute>
+            <PrivateRoute path="/managePackages">
               <ManagePackages></ManagePackages>
-            </Route>
+            </PrivateRoute>
             <Route path="/packages">
               <Packages></Packages>
             </Route>
-            <Route path="/booking/:packageId">
+            <PrivateRoute path="/booking/:packageId">
               <Booking></Booking>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
