@@ -1,4 +1,6 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Banner from '../Banner/Banner';
 import Packages from '../Packages/Packages';
 import './Home.css'
@@ -44,6 +46,14 @@ const Home = () => {
                         <p>25 destination</p>
                     </div>
                 </div>
+            </section>
+            <section className="container offer-section">
+                <h6 className="text-danger fw-bold fs-5 pt-5 "><i class="fas fa-long-arrow-alt-right"></i>HOLIDAY PACKAGE OFFER</h6>
+                <h2 className="offer-title">HOLIDAY SPECIAL 25% OFF !</h2>
+                <input className="input-field" type="email" name="" placeholder="Your Email" id="" />
+                <Link to="/login">
+                    <Button className="input-button">SignUp Now</Button>
+                </Link>
             </section>
         </div>
     );

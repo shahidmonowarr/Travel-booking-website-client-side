@@ -1,0 +1,8 @@
+.login-page{
+    padding-top: 150px;
+    background-image: url('/src/images/cover4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:90vh ;
+}

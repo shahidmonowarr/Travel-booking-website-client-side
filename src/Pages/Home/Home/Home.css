@@ -14,3 +14,32 @@
             grid-template-columns: repeat(2,1fr);
         }
     }
+
+.offer-section{
+    background-image: url('/src/images/cover3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:80vh ;
+    padding-top: 70px;
+}
+
+.offer-title{
+    color:rgb(182, 132, 132);
+    font-size: 55px;
+    font-weight: 800;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.input-field{
+    padding: 10px 60px;
+}
+.input-button{
+    color: white;
+    background-color: goldenrod;
+    transition: 0.5s;
+    padding: 10px 5px;
+}
