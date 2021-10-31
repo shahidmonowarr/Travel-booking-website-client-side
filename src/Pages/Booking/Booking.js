@@ -6,7 +6,7 @@ const Booking = () => {
     const [singlePackage, setSinglePackage] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/packages/${packageId}`)
+        fetch(`https://whispering-mountain-08935.herokuapp.com/packages/${packageId}`)
             .then(res => res.json())
             .then(data => setSinglePackage(data));
     }, [])
