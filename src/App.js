@@ -11,6 +11,7 @@ import Packages from './Pages/Home/Packages/Packages';
 import Booking from './Pages/Booking/Booking';
 import ManagePackages from './Pages/ManagePackages/ManagePackages';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import About from './Pages/About/About';
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
             </Route>
             <PrivateRoute path="/booking/:packageId">
               <Booking></Booking>
+            </PrivateRoute>
+            <PrivateRoute path="/about">
+              <About></About>
             </PrivateRoute>
             <Route path="/login">
               <Login></Login>

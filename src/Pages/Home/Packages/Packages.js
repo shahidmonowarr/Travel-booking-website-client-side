@@ -12,7 +12,7 @@ const Packages = () => {
     return (
         <div className="container" id="services">
             <h6 className="text-danger fw-bold fs-5 mt-5 "><i class="fas fa-long-arrow-alt-right"></i>EXPLORE GREAT PLACES</h6>
-            <h2 className="text-success fw-bold mt-5 mb-3 fs-1">POPULAR PACKAGES</h2>
+            <h2 className="title">POPULAR PACKAGES</h2>
             <div className="row">
                 {
                     packages.map(singlePackage => <SinglePackage key={singlePackage._id} singlePackage={singlePackage}></SinglePackage>)
