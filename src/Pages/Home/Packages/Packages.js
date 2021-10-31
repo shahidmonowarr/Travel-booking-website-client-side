@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import SinglePackage from '../SinglePackage/SinglePackage';
-import Package from '../SinglePackage/SinglePackage';
 import './Packages.css'
 
 const Packages = () => {
     const [packages, setPackages] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://whispering-mountain-08935.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setPackages(data));
     }, [])
     return (
         <div className="container" id="services">
-            <h2 className="text-primary mt-5 mb-3 fs-1"> Our Packages</h2>
-            <div className="service-container">
+            <h6 className="text-danger fw-bold fs-5 mt-5 "><i class="fas fa-long-arrow-alt-right"></i>EXPLORE GREAT PLACES</h6>
+            <h2 className="text-success fw-bold mt-5 mb-3 fs-1">POPULAR PACKAGES</h2>
+            <div className="row">
                 {
                     packages.map(singlePackage => <SinglePackage key={singlePackage._id} singlePackage={singlePackage}></SinglePackage>)
                 }

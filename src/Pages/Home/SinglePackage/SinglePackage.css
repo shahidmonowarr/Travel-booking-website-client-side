@@ -1,0 +1,12 @@
+.service{
+    background-color: rgb(195, 222, 223);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.service:hover{
+    box-shadow: 2px 5px 10px gray;
+}
+
+.service-img{
+    border-radius: 10px;
+}

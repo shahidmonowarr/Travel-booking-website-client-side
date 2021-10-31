@@ -1,4 +1,5 @@
 .add-package form{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,3 +10,12 @@
         width: 40%;
         margin-bottom: 10px;
     }
+
+.add-package{
+    padding-top: 70px;
+    background-image: url('/src/images/cover2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:90vh ;
+}
