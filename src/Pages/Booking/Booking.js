@@ -18,9 +18,10 @@ const Booking = () => {
 
         console.log(data);
 
-        axios.post('https://whispering-mountain-08935.herokuapp.com/', data)
+        axios.post('https://whispering-mountain-08935.herokuapp.com/orders', data)
             .then(res => {
                 if (res.data.insertedId) {
+                    console.log(res.data)
                     alert('Added Successfully');
                     reset();
                 }
