@@ -34,7 +34,7 @@ const Footer = () => {
                             <div className="right-footer-container">
                                 <div className="phone d-flex align-items-center justify-content-center mt-3">
                                     <div>
-                                        <input className="px-5" placeholder="Email" type="email" name="" id="" />
+                                        <input className="px-5 mx-2" placeholder="Email" type="email" name="" id="" />
                                         <button className="px-5 my-2 bg-warning rounded-3 text-white">SUBSCRIBE NOW</button>
                                     </div>
                                 </div>

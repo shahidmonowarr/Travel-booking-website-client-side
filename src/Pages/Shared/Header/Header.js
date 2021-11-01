@@ -16,18 +16,30 @@ const Header = () => {
                     <Navbar.Collapse >
                         <Nav className="ms-auto text-light">
                             <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
-                            <Nav.Link as={HashLink} to="/home#packages">Packages</Nav.Link>
-                            <Nav.Link as={Link} to="/addPackage">Add Package</Nav.Link>
-                            <Nav.Link as={Link} to="/managePackages">Manage Package</Nav.Link>
-                            <Nav.Link as={Link} to="/manageOrders">Manage Orders</Nav.Link>
-                            <Nav.Link as={Link} to="/myOrder">My Order</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#packages-page">Packages</Nav.Link>
+
+
+
+
                             <Nav.Link as={HashLink} to="/about">About Us</Nav.Link>
+                            {user?.email &&
+                                <Nav.Link as={Link} to="/addPackage">Add Package</Nav.Link>
+                            }
+                            {user?.email &&
+                                <Nav.Link as={Link} to="/managePackages">Manage Package</Nav.Link>
+                            }
+                            {user?.email &&
+                                <Nav.Link as={Link} to="/manageOrders">Manage Orders</Nav.Link>
+                            }
+                            {user?.email &&
+                                <Nav.Link as={Link} to="/myOrder">My Order</Nav.Link>
+                            }
                             {user?.email ?
-                                <Button onClick={logOut} variant="light" className="mx-3">Logout</Button>
+                                <Button onClick={logOut} variant="light" className="mx-3 bg-warning text-white">Logout</Button>
                                 :
                                 <Nav.Link as={Link} to="/login">Login</Nav.Link>}
                             <Navbar.Text>
-                                User: <a href="#login"> {user?.displayName}</a>
+                                User: <a style={{ textDecoration: "none" }} href="#login"> {user?.displayName}</a>
                             </Navbar.Text>
                         </Nav>
                     </Navbar.Collapse>

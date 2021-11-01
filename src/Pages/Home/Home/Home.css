@@ -35,13 +35,15 @@
 }
 
 .input-field{
+    border: 3px solid rgb(223, 164, 57);
+    background: transparent;
     padding: 10px 60px;
 }
 .input-button{
     color: white;
     background-color: goldenrod;
     transition: 0.5s;
-    padding: 10px 5px;
+    padding: 14px 10px;
 }
 .title{
     padding: 50px 20px 20px;
@@ -49,6 +51,16 @@
        font-weight: 800;
        font-family: sans-serif;
        color: #0c631a;
+}
+
+.activity-div{
+    border: 2px;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.activity-div:hover{
+    box-shadow: 2px 5px 10px gray;
 }
 @media only screen and (max-width: 600px) {
     .title{
