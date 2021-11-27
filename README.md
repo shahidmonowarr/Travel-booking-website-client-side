@@ -5,7 +5,7 @@ This project was hosting with firebase live site link is:  [travel-booking-websi
 
 ## About Projects:
 
-### 1.This project is all about a Travel Booking Service Website.
+### 1.This website is a full-stack and responsive Travel Booking related website.
 ### 2.In this project we include, HTML, CSS, Bootstrap, ReactBootstrap, React, Firebase authentication, API from database, mongodb, express js, Node js.
 ### 3.People can easily find their desired travel location, places, cost of that tour, can book the tour package, and also the detail info about the tourism guidline. 
 ### 4.In this project we have done firebase authentication using google login.
