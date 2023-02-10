@@ -18,7 +18,7 @@ const Booking = () => {
 
         console.log(data);
 
-        axios.post('https://whispering-mountain-08935.herokuapp.com/orders', data)
+        axios.post('https://travel-mate-server.onrender.com/orders', data)
             .then(res => {
                 if (res.data.insertedId) {
                     console.log(res.data)
@@ -29,7 +29,7 @@ const Booking = () => {
     };
 
     useEffect(() => {
-        fetch(`https://whispering-mountain-08935.herokuapp.com/packages/${packageId}`)
+        fetch(`https://travel-mate-server.onrender.com/packages/${packageId}`)
             .then(res => res.json())
             .then(data => setSinglePackage(data));
     }, [])

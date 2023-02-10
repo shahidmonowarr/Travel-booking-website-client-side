@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import './ManagePackages.css'
+import './ManagePackages.css';
 
 const ManagePackages = () => {
     const [packages, setPackages] = useState([]);
 
     useEffect(() => {
-        fetch('https://whispering-mountain-08935.herokuapp.com/packages')
+        fetch('https://travel-mate-server.onrender.com/packages')
             .then(res => res.json())
             .then(data => setPackages(data));
     }, []);
 
     const handleDelete = id => {
-        const url = `https://whispering-mountain-08935.herokuapp.com/packages/${id}`;
+        const url = `https://travel-mate-server.onrender.com/packages/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

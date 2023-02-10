@@ -1,27 +1,46 @@
 .manage-orders{
-    padding-top: 70px;
+    padding-top: 5px;
+    padding-bottom: 10px;
     background-image: url('/src/images/cover2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height:150vh ;
+    height:auto ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
 }
 .order-div{
+    width: 70%;
 border: 2px;
 border-radius: 20px;
 transition: 0.5s;
 cursor: pointer;
 padding-bottom: 10px;
+background-color: darkgray;
 }
 .orders-div{
-margin-top: 10px;
-margin-bottom: 10px;
 display: flex;
 align-items: center;
 justify-content: center;
 }
-
-
 .order-div:hover{
     box-shadow: 2px 5px 10px rgb(70, 64, 64);
 }
+@media only screen and (max-width:688px){
+    .manage-orders{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .order-div{
+        width: 75%;
+    }
+}
+    @media only screen and (min-width:689px)and(max-width:991px){
+        .manage-orders{
+            grid-template-columns: repeat(1,1fr);
+        }
+        .order-div{
+            width: 50%;
+        }
+    }

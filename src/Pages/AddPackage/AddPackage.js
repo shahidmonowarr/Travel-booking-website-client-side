@@ -1,14 +1,14 @@
-import React from 'react';
-import './AddPackage.css'
-import { useForm } from "react-hook-form";
 import axios from 'axios';
+import React from 'react';
+import { useForm } from "react-hook-form";
+import './AddPackage.css';
 
 const AddPackage = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('https://whispering-mountain-08935.herokuapp.com/packages', data)
+        axios.post('https://travel-mate-server.onrender.com/packages', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully');

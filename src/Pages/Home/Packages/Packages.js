@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import SinglePackage from '../SinglePackage/SinglePackage';
-import './Packages.css'
+import './Packages.css';
 
 const Packages = () => {
     const [packages, setPackages] = useState([]);
     useEffect(() => {
-        fetch('https://whispering-mountain-08935.herokuapp.com/packages')
+        fetch('https://travel-mate-server.onrender.com/packages')
             .then(res => res.json())
             .then(data => setPackages(data));
     }, [])

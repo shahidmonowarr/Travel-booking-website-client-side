@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../context/useAuth';
-import './MyOrder.css'
+import './MyOrder.css';
 
 const MyOrder = () => {
     const { user } = useAuth();
 
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        fetch('https://whispering-mountain-08935.herokuapp.com/orders')
+        fetch('https://travel-mate-server.onrender.com/orders')
             .then(res => res.json())
             .then(data => {
                 const myOrders = data.filter(singleData => singleData.email == user.email);
