@@ -28,14 +28,14 @@ const ManagePackages = () => {
     }
 
     return (
-        <div className="manage-Packages ">
-            <h2 className="text-success fw-bold pt-5 pb-3 fs-1">Remove package If Needed</h2>
+        <div className="manage-orders">
+            <h2 className="text-black fw-bold pt-2 pb-1 fs-1 mx-auto">Delete package If Needed</h2>
             <br />
             {
-                packages.map(singlePackage => <div key={singlePackage._id}>
-                    <div className="package-div my-2 container">
+                packages.map(singlePackage => <div className="orders-div" key={singlePackage._id}>
+                    <div className="order-div py-3 my-2 container">
                         <h3 className="fw-bold fs-4 text-white"><i class="fas fa-hand-holding-heart"></i> {singlePackage.title}</h3>
-                        <button className="bg-warning mx-3" onClick={() => handleDelete(singlePackage._id)}> Remove <i class="fas fa-angle-double-right"></i></button>
+                        <button className="btn btn-danger mx-auto" onClick={() => handleDelete(singlePackage._id)}> Remove <i class="fas fa-angle-double-right"></i></button>
                     </div>
                 </div>)
             }

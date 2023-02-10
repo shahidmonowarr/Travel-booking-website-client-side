@@ -13,6 +13,7 @@
 
 .add-package{
     padding-top: 5px;
+    padding-bottom: 15px;
     background-image: url('/src/images/cover2.jpg');
     background-position: center;
     background-repeat: no-repeat;

@@ -21,12 +21,12 @@ const AddPackage = () => {
         <div className="add-package">
             <h2 className="text-light fw-bold mt-5 mb-3 fs-1">Please add some package</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input {...register("title", { required: true, maxLength: 200 })} placeholder="Title" />
-                <input {...register("location", { required: true, maxLength: 200 })} placeholder="Location" />
+                <input className='form-control' {...register("title", { required: true, maxLength: 200 })} placeholder="Title" />
+                <input className='form-control' {...register("location", { required: true, maxLength: 200 })} placeholder="Location" />
                 <textarea {...register("description")} placeholder="Description" />
-                <input type="number" {...register("price")} placeholder="Price" />
-                <input {...register("img")} placeholder="Image url" />
-                <input className="bg-warning fs-6 fw-bold text-white" type="submit" />
+                <input className='form-control' type="number" {...register("price")} placeholder="Price" />
+                <input className='form-control' {...register("img")} placeholder="Image url" />
+                <input className="btn btn-success form-control fs-6 fw-bold text-white" type="submit" />
             </form>
         </div>
     );

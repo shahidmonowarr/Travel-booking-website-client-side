@@ -17,7 +17,7 @@ border-radius: 20px;
 transition: 0.5s;
 cursor: pointer;
 padding-bottom: 10px;
-background-color: darkgray;
+background-color: rgb(136, 130, 130);
 }
 .orders-div{
 display: flex;
