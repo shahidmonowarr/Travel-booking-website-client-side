@@ -5,8 +5,8 @@ This project was hosting with firebase live site link is:  [travel-booking-websi
 
 ## About Projects:
 
-### 1.This project is all about a Travel Booking Service Website.
+### 1.Travel Mate is a full-stack and responsive travel booking site for travelers.
 ### 2.In this project we include, HTML, CSS, Bootstrap, ReactBootstrap, React, Firebase authentication, API from database, mongodb, express js, Node js.
-### 3.People can easily find their desired travel location, places, cost of that tour, can book the tour package, and also the detail info about the tourism guidline. 
-### 4.In this project we have done firebase authentication using google login.
+### 3.Users can check their desired travel location, cost of the package and can book their particular package from this website.
+### 4.The authentication system of Travel Mate is firebase google login authentication.
 ### 5.Also added context api for that reason this project looks so awesome. Hope it will help people to travel the world with the best price.
